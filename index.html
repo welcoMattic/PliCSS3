@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<link href="css/style.css" media="screen, projection" rel="stylesheet" type="text/css" />
+	<!-- [if lt IE9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif] -->
+	<title>[LAB] - Pli 3D en CSS3</title>
+</head>
+<body>
+<section>
+	<article class="fold">
+		<img src="img/html5_kontest.jpg" alt="Kontest" width="300" height="300">
+		<span class="fb-like" data-href="https://www.facebook.com/kontest" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false" data-font="arial"></span>
+		<span class="twitter-follow"><a href="https://twitter.com/kontesteapp" class="twitter-follow-button" data-show-count="false" data-lang="fr">Suivre @kontesteapp</a></span>
+	</article>
+</section>
+</body>
+
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<script src="js/script.js"></script>
+
+<!-- FACEBOOK SDK -->
+<div id="fb-root"></div>
+<script>
+(function(d, s, id) {
+	var js, fjs = d.getElementsByTagName(s)[0];
+	if (d.getElementById(id)) return;
+	js = d.createElement(s); js.id = id;
+	js.src = "//connect.facebook.net/fr_FR/all.js#xfbml=1";
+	fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
+
+<!-- TWITTER SDK -->
+<script>
+!function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0],
+        p = /^http:/.test(d.location) ? 'http' : 'https';
+    if (!d.getElementById(id)) {
+        js = d.createElement(s);
+        js.id = id;
+        js.src = p + '://platform.twitter.com/widgets.js';
+        fjs.parentNode.insertBefore(js, fjs);
+    }
+}(document, 'script', 'twitter-wjs');
+</script>
+
+</html>
