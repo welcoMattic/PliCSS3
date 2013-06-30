@@ -133,8 +133,10 @@ article .fb-like, article .twitter-follow {
   height: inherit;
   top: 260px;
   left: 20px;
+  width: 140px;
+  height: 40px;
 }
-/* line 66, ../sass/style.scss */
+/* line 68, ../sass/style.scss */
 article .twitter-follow {
   left: 145px;
 }
